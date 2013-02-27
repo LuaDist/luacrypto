@@ -1,0 +1,54 @@
+type = "x86_64"
+arch = "Ubuntu"
+author = "Keith Howe"
+depends = {
+[[lua ~> 5.1]],
+[[openssl >=0.9.7]],
+}
+
+desc = "LuaCrypto provides a Lua frontend to the OpenSSL cryptographic library."
+version = "0.3.0"
+maintainer = "Peter Kapec, Michal Kottman"
+files = {
+Runtime = {
+[[lib/lua/crypto.so]],
+}
+,
+Documentation = {
+[[share/luacrypto/doc//us/examples.html]],
+[[share/luacrypto/doc//us/luacrypto-128.png]],
+[[share/luacrypto/doc//us/license.html]],
+[[share/luacrypto/doc//us/manual.html]],
+[[share/luacrypto/doc//us/index.html]],
+}
+,
+Data = {
+[[share/luacrypto/COPYING]],
+[[share/luacrypto/ChangeLog]],
+[[share/luacrypto/README]],
+[[share/luacrypto/NEWS]],
+}
+,
+Test = {
+[[share/luacrypto/test//pkeytest.lua]],
+[[share/luacrypto/test//ca/README]],
+[[share/luacrypto/test//ca/server.csr]],
+[[share/luacrypto/test//ca/server.key.insecure]],
+[[share/luacrypto/test//ca/ca.crt]],
+[[share/luacrypto/test//ca/server.key]],
+[[share/luacrypto/test//ca/server.crt]],
+[[share/luacrypto/test//ca/ca.key]],
+[[share/luacrypto/test//run-tests]],
+[[share/luacrypto/test//open_seal.lua]],
+[[share/luacrypto/test//test.lua]],
+[[share/luacrypto/test//message]],
+[[share/luacrypto/test//encrypt.lua]],
+[[share/luacrypto/test//rand.lua]],
+[[share/luacrypto/test//x509_ca.lua]],
+}
+,
+}
+
+license = "MIT"
+name = "luacrypto"
+url = "http://mkottman.github.com/luacrypto/"
